@@ -1,0 +1,122 @@
+*{
+    font-family: Nunito Sans;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+:root{
+    --box-shadow : #888888;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    --background-color : hsl(0, 0%, 98%);
+    --text-color : hsl(200, 15%, 8%);
+    --Element-color : white;
+    transition: all 0.1s ease-in;
+    background-color: var(--background-color);
+   
+  }
+  body.dark{
+    margin: 0;
+    padding: 0;
+  
+    --background-color : hsl(207, 26%, 17%);
+    --text-color : #ffff;
+    color:var(--text-color);
+    --Element-color :  hsl(209, 23%, 22%);
+    background-color: var(--background-color);
+    transition: all 0.3s ease-in;
+  }
+  main{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;;
+    margin-top: 50px;
+    margin-left: 100px;;
+  }
+  .back-button{
+   height : 30px;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+   align-items: center;
+   width : 100px;
+    box-shadow: 0px 0px 9px 4px var(--box-shadow);
+    a{
+      margin: 5px 8px;
+    }
+  }
+  .whole{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;;
+  }
+  .image-content img{
+    max-width: 600px; 
+    max-height: 400px;;
+  }
+.description-content{
+  display: flex;
+  flex-direction: column;
+  gap : 15px;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  gap : 10px;
+}
+.heading{
+  font-size: 55px;;
+  font-weight: 900;
+}
+.info-head{
+  font-size: 23px;
+  font-weight: 600;
+}
+
+
+.borders{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 18px;
+  padding: 5px 8px;
+  display: inline-block;
+  border-radius: 5px;;
+  box-shadow: 0px 0px 5px 0px var(--box-shadow);
+  margin-right: 15px;;
+  margin-bottom: 20px;;
+}
+
+
+@media (width <=  768px) {
+  .whole{
+    flex-direction: column;
+    gap: 50px;;
+  }
+  .image-content img{
+    max-width: 300px;;
+  
+  }
+  main{
+ 
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;;
+    margin-top: 40px;
+    margin-left: 40px;;
+
+    
+  }
+  .info{
+    flex-direction: column;
+    gap : 30px;
+  }
+  
+ 
+  
+}
